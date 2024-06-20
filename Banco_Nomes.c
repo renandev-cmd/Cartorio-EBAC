@@ -14,7 +14,7 @@ int main() //Função "principal" (inteira)
 		
 		setlocale(LC_ALL, "Portuguese"); //Setando linguagem para portugues
 	
-		printf("\t\nBanco de Nomes EBAC\n\nEscolha a opção desejada:\n\n\t1 - Registrar Nome\n\t2 - Consultar Nome\n\t3 - Deletar Nome\n\nDigite aqui:"); //Menu de opções
+		printf("\t\nBanco de Nomes EBAC\n\nEscolha a opção desejada:\n\n\t1 - Registrar Nome\n\t2 - Consultar Nome\n\t3 - Deletar Nome\n\t4 - Sair do Programa\n\nDigite aqui:"); //Menu de opções
 	
 		scanf ("%d", &escolha); //Scanear a tela para aguardar um input do usuario
 	
@@ -33,6 +33,11 @@ int main() //Função "principal" (inteira)
 			case 3:
 			deletar();
 			break;
+			
+			case 4:
+			printf("\nObrigado por ultilizar nosso programa!\n");
+			return 0;
+			break;	
 			
 			default:
 			printf("\n\tEssa opção não esta disponível\t\n\n");
